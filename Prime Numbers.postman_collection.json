@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "4003bba6-7b06-49c7-a077-f2d79fd370e4",
+		"name": "Prime Numbers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32020737"
+	},
+	"item": [
+		{
+			"name": "find-prime",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"number_of_primes\": 13111\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/find-prime/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"find-prime",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-result",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/get-result/9ea59637-6d41-476f-a99d-2a24a72ed734",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"get-result",
+						"9ea59637-6d41-476f-a99d-2a24a72ed734"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
